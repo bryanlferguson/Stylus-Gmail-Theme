@@ -1,0 +1,82 @@
+/* Making hte header blue */
+#gb {
+    background-color: #4285f4 !important;
+}
+
+/*
+Replacing the gmail logo with the inbox one.
+*/
+.gb_Fe {
+     display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url("https://i.imgur.com/jey37lf.png") no-repeat;
+    width: 60px; /* Width of new image */
+    height: 26px; /* Height of new image */
+    padding-left: 180px; /* Equal to width of new image */
+}
+
+/*
+hiding the gmail logo
+*/
+.gb_Fe img {
+    display: none;
+}
+/*
+Making it so that the compose button div is in the bottom right and will stay on top.
+Also giving it color, and circle appearance with shadow underneath.
+*/
+.z0 {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    background-color: #d23f31;
+    border-radius: 50%;
+    width: 50px;
+    height: 57px;
+    box-shadow: 1px 3px 1px 0px #ccc;
+}
+
+/*
+Hiding the disgusting Compose button that comes with gmail.
+*/
+.z0 .L3 {
+    visibility: hidden;
+    position: relative;
+}
+
+/*
+Replacing the button with a simple white plus.
+Centering it and styling it and such as well.
+*/
+.z0 .L3:after {
+    visibility: visible;
+    position: absolute;
+    content: "+";
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    padding-left: 12px;
+    padding-bottom: 4px;
+
+}
+/*
+Hiding the right side bar.
+*/
+.bAw {
+    display: none;
+}
+
+/*
+Centering many of the elements:
+list of email, email view, top bar thing
+*/
+.bkK .aE3, .aeH, .bAn{
+    width: 65% !important;
+    margin-left:12% !important;
+    padding-left: 70px;
+} 
